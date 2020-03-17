@@ -28,8 +28,8 @@ class SerialGenerator:
 
     def generate(self):
         "Generates new serial number (+1 of original start_number)"
-        print(self.start)
         self.start += 1
+        return self.start - 1
 
     def reset(self):
         self.start = self.initial
